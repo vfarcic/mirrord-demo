@@ -5,5 +5,12 @@
   },
   "agent": {
     "namespace": "demo"
+  },
+  "feature": {
+    "network": {
+      "incoming": {
+        "mode": "steal"
+      }
+    }
   }
 }
