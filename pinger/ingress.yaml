@@ -12,7 +12,7 @@ metadata:
   name: pinger
   namespace: demo
 spec:
-  ingressClassName: traefik
+  ingressClassName: "traefik"
   rules:
     - host: pinger.127.0.0.1.nip.io
       http:

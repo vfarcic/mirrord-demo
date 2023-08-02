@@ -12,7 +12,7 @@ func main() {
 	log.SetOutput(os.Stderr)
 	log.Println("Starting server...")
 	router := gin.New()
-	router.GET("/ping", rootHandler)
+	router.GET("/", rootHandler)
 	port := os.Getenv("PORT")
 	if len(port) == 0 {
 		port = "8080"
