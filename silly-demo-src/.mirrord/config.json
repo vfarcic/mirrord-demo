@@ -1,0 +1,19 @@
+{
+    "target": {
+      "path": "deployment/pinger",
+      "namespace": "demo"
+    },
+    "agent": {
+        "namespace": "demo"
+    },
+    "feature": {
+      "network": {
+          "incoming": {
+              "mode": "steal",
+              "http_header_filter": {
+                  "ports": [8080]
+              }
+          }
+      }
+    }
+}
