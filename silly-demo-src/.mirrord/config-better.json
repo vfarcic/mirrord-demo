@@ -10,9 +10,9 @@
         "network": {
             "incoming": {
                 "mode": "steal",
-                "http_header_filter": {
+                "http_filter": {
                     "ports": [8080],
-                    "filter": "test: mirrord"
+                    "header_filter": "test: mirrord"
                 }
             }
         }
